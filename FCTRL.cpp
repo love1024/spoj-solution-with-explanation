@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//ref - http://www.mytechinterviews.com/how-many-trailing-zeros-in-100-factorial
+
 //function to compute occurrences of
 //number b till number a
 //for a = 25 and b = 5
