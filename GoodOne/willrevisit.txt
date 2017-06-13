@@ -1,4 +1,5 @@
 COINS 
-JULKA
+JULKA (string mathematical operations)
 ACODE *
 PALIN **
+CANTON * (formula)
