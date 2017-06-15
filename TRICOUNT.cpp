@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//REF - http://jwilson.coe.uga.edu/EMAT6680Fa06/Kitchings/cnkEMAT6600/inprogress/Triangle%20Counting/trianglecounting2.html
+
 //The Question is all about formulas
 //Try to derive then as cannot be explain
 //fully here
