@@ -3,3 +3,4 @@ JULKA (string mathematical operations)
 ACODE *
 PALIN **
 CANTON * (formula)
+TRICOUNT (formulas of triangular numbers)
