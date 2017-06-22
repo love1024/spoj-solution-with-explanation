@@ -5,3 +5,4 @@ PALIN **
 CANTON * (formula)
 TRICOUNT (formulas of triangular numbers)
 INVCNT (With BIT)
+EDIST (Modified LCS)
