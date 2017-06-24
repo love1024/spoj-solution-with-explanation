@@ -4,5 +4,6 @@ ACODE *
 PALIN **
 CANTON * (formula)
 TRICOUNT (formulas of triangular numbers)
-INVCNT (With BIT)
-EDIST (Modified LCS)
+INVCNT (With BIT) ** 
+EDIST (Modified LCS) *
+AGGRCOW (Binary Search) **
