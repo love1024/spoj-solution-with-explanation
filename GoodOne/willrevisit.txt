@@ -7,3 +7,4 @@ TRICOUNT (formulas of triangular numbers)
 INVCNT (With BIT) ** 
 EDIST (Modified LCS) *
 AGGRCOW (Binary Search) **
+PT07Z (dfs longest path)
