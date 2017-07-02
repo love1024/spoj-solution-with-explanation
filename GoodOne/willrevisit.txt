@@ -8,3 +8,4 @@ INVCNT (With BIT) **
 EDIST (Modified LCS) *
 AGGRCOW (Binary Search) **
 PT07Z (dfs longest path)
+NY10A (USE of logical operators)
