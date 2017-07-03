@@ -1,66 +1,55 @@
 #include<bits/stdc++.h>
-
 using namespace std;
+
+
 
 int main() {
 
-    //variable to store number
-    string num;
-    cin>>num;
+    //Take input string
+    string str;
+    cin>>str;
 
-    //loop while number is not zero
-    while(num != "0") {
+    //While string is not equal to 0
+    while(str != "0") {
 
-        //a and b will donate i-2 and i-1
-        long long int a,b;
-        a = b = 1;
+        //Take three variables for storing result of
+        //previous -1 , previous and current value
+        //Like in fibonacci series
+        long long a = 1,b=1,c=0;
 
-        for(int i=1;i<num.length();i++) {
+        //store previous character
+        int prev = str[0]-'0';
 
-            //taking current and previous integer
-            int cur = num[i]-'0';
-            int prev = num[i-1]-'0';
+        //Traverse all string
+        for(int i=1; i<str.length(); i++) {
 
-            //if the current element is zero
-            if(cur == 0) {
+            //Take current character
+            int cur = str[i] - '0';
 
-                //then if last is not 1 or 2 it is not valid input
-                if(prev != 1 && prev != 2 ) {
-                    b = 0;
-                    break;
-                } else {
+            //if it can combine with previous character
+            //then we can use previous-1 result
+            if((prev == 1) || (prev == 2 && cur <= 6))
+                c += a;
 
-                    //if last is 1 or 2 then cur and last will
-                    //definitely form a combine letter(without last 0 is not valid)
-                    //so current result  will be equal to letters formed till n-2
-                    b = a;
-                }
-            } else {
+            //If it can form a single input
+            //then we can use previous result also
+            if(cur != 0)
+                c += b;
 
-                //if previous element was zero
-                //it means it was combined with
-                //n-2 so cant combined with current letter
-                //so result will be equal to previous
-                if(prev == 0)
-                    b = a;
-                else if(prev*10 + cur <= 26) {
+            //Make current equal to previous
+            prev = str[i] - '0';
 
-                    //current can now form a single letter by itself
-                    //and can also be added to previous letter
-                    //so it will add both b and a to current result
-                    int temp = b;
-                    b = b + a;
-                    a = temp;
-                } else
-                    //if current and previous not form valid letter
-                    //then it will be single letter and result will be
-                    //equal to previous result
-                    a = b;
-            }
+            //replace variable
+            a = b;
+            b = c;
+            c = 0;
         }
 
-        //print result and get new number
+        //print the result
         cout<<b<<endl;
-        cin>>num;
+
+        //Take next input
+        cin>>str;
     }
+    return 0;
 }
