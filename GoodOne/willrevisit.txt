@@ -1,5 +1,13 @@
+--------------------------------
+No need to do again
+-------------------------------
+
 COINS 
 JULKA (string mathematical operations)
+
+---------------------
+Try once
+----------------------
 ACODE *
 PALIN **
 CANTON * (formula)
@@ -9,3 +17,4 @@ EDIST (Modified LCS) *
 AGGRCOW (Binary Search) **
 PT07Z (dfs longest path)
 NY10A (USE of logical operators)
+GSS1 (Segment tree)
