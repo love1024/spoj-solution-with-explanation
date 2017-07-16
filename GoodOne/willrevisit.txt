@@ -15,6 +15,7 @@ EDIST (Modified LCS) *
 PT07Z (dfs longest path)
 NY10A (USE of logical operators)
 AIBOHP (DP)
+MARBLES (Stars and bars)
 ---------------------
 **
 ---------------------
