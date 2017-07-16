@@ -27,3 +27,4 @@ BITMAP (2d BFS)
 EDT (Euler’s totient function)
 PALIN
 TRT
+NHAY (KMP)
