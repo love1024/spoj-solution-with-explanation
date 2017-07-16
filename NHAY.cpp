@@ -111,6 +111,5 @@ int main()
         //Take next line characters
         getline(cin,temp);
     }
-
     return 0;
 }
