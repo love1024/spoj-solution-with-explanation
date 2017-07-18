@@ -16,6 +16,7 @@ PT07Z (dfs longest path)
 NY10A (USE of logical operators)
 AIBOHP (DP)
 MARBLES (Stars and bars)
+HORRIBLE (Lazy propagation)
 ---------------------
 **
 ---------------------
@@ -28,3 +29,4 @@ EDT (Euler’s totient function)
 PALIN
 TRT
 NHAY (KMP)
+HORRIBLE (Lazy propagation)
