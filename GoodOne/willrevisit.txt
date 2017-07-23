@@ -17,6 +17,7 @@ NY10A (USE of logical operators)
 AIBOHP (DP)
 MARBLES (Stars and bars)
 HORRIBLE (Lazy propagation)
+PIGBANK (Knapsack with repetition)
 ---------------------
 **
 ---------------------
