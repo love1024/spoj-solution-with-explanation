@@ -24,7 +24,7 @@ BUGLIFE (Graph coloring)
 **
 ---------------------
 PARTY (Knapsack)
-GSS1 (Segment tree)
+GSS3 (Segment tree)
 INVCNT (With BIT)
 AGGRCOW (Binary Search) 
 BITMAP (2d BFS)
