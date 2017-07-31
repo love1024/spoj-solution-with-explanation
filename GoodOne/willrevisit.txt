@@ -33,3 +33,4 @@ PALIN
 TRT
 NHAY (KMP)
 HORRIBLE (Lazy propagation)
+TWOSQR (Fermet theorem and bitwise sieve)
