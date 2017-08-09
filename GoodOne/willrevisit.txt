@@ -34,3 +34,4 @@ TRT
 NHAY (KMP)
 HORRIBLE (Lazy propagation)
 TWOSQR (Fermet theorem and bitwise sieve)
+FIBOSUM (Matrix exponentitation)
