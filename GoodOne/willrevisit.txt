@@ -6,6 +6,11 @@ COINS
 JULKA (string mathematical operations)
 ARRAYSUB (Deque)
 
+---------------------------
+TO DO
+---------------------------
+DQUERY - Using BIT
+
 ---------------------
 *
 ----------------------
