@@ -22,10 +22,10 @@ PT07Z (dfs longest path)
 NY10A (USE of logical operators)
 AIBOHP (DP)
 MARBLES (Stars and bars)
-HORRIBLE (Lazy propagation)
 PIGBANK (Knapsack with repetition)
 BUGLIFE (Graph coloring)
 PHONELST (Trie)
+MCOINS (Game theory)
 ---------------------
 **
 ---------------------
