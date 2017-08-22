@@ -5,6 +5,7 @@ No need to do again
 COINS 
 JULKA (string mathematical operations)
 ARRAYSUB (Deque)
+DANGER (Josephus problem)
 
 ---------------------------
 TO DO
@@ -42,3 +43,7 @@ HORRIBLE (Lazy propagation)
 TWOSQR (Fermet theorem and bitwise sieve)
 FIBOSUM (Matrix exponentitation)
 DQUERY (MO Algorithm)
+-----------------------
+***
+-----------------------
+DISUBSTR (Suffix array)
