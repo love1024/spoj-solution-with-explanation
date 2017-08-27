@@ -27,6 +27,7 @@ PIGBANK (Knapsack with repetition)
 BUGLIFE (Graph coloring)
 PHONELST (Trie)
 MCOINS (Game theory)
+LABYR1 (Max diameter of tree)
 ---------------------
 **
 ---------------------
@@ -43,6 +44,7 @@ HORRIBLE (Lazy propagation)
 TWOSQR (Fermet theorem and bitwise sieve)
 FIBOSUM (Matrix exponentitation)
 DQUERY (MO Algorithm)
+SHPATH (Dijkstra)
 -----------------------
 ***
 -----------------------
