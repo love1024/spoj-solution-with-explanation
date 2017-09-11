@@ -6,6 +6,7 @@ using namespace std;
 set< pair<int,int> > st;
 
 //Node for queue with x,y coordinates and m moves
+
 class Node {
 public:
     int x,y,m;
