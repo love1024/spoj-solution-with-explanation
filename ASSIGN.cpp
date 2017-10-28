@@ -2,31 +2,24 @@
 
 using namespace std;
 
-//MAX subsets
-#define MAX 1048576
+//Array to store temporary results
+long long dp[(1<<20)];
 
-//Array and temporary array
-long long arr[MAX];
-long long temp[MAX];
-
-//To store power of 2
-int dp[21];
-
-//Store power of 2
-void makeArray() {
-    int cur = 1;
-    for(int i=1;i<=20;i++, cur<<=1)
-        dp[i-1] = cur;
+//Find set bits in the integer
+int cntSetBits(int n) {
+    int cnt = 0;
+    while(n > 0) {
+        if(n%2 != 0)
+            cnt++;
+        n /= 2;
+    }
+    return cnt;
 }
-
 
 int main() {
 
-    //Find power of 2
-    makeArray();
-
     //Take input
-    int t,n;
+    int t,n,MAX;
     cin>>t;
 
     //While there is input
@@ -44,49 +37,30 @@ int main() {
             }
         }
 
-        //Initialize array to 0
-        memset(arr,0,sizeof(arr));
+        //Initialize array to 0 & empty set to 1
+        memset(dp,0,sizeof(dp));
+        dp[0] = 1;
 
-        //Mark the position of ones in first row
-        for(int i=0;i<n;i++) {
-            if(vec[0][i] != 0)
-                arr[dp[n-i-1]] = 1;
-        }
+        //Find maximum number of subsets
+        MAX = (1<<n);
 
-        //Now go for each row and if there is 1 then
-        //take this 1 as chosen and mark the choices for next row
-        for(int i=0;i<n-1;i++) {
+        //Loop over all possible subsets
+        for(int mask=0;mask<MAX-1;mask++) {
 
-            //Initialize the temporary array to 0
-            memset(temp,0,sizeof(temp));
+            //Find count of set bits and it will donate the its person
+            int cnt = cntSetBits(mask);
 
-            //Loop over all intermediate subsets found
-            for(int j=0;j<MAX;j++) {
+            //Loop over the row and mark all the bits that we can set next
+            for(int j=0;j<n;j++) {
 
-                //If it is found
-                if(arr[j] != 0) {
-
-                    //Loop over the next row
-                    for(int k=0;k<n;k++) {
-
-                        //If there is 1 in next row and this column is not set before
-                        //in current input then put it into the array
-                        if(vec[i+1][k] != 0 && (j&dp[n-k-1]) == 0) {
-                            temp[j|dp[n-k-1]] += arr[j] ;
-                        }
-                    }
-                }
+                //If the current element is 1 and its bit is not already set
+                //then set the current bit and add to it result of reaching it
+                if(vec[cnt][j] == 1 && ((mask & (1<<j)) == 0))
+                    dp[mask | (1<<j)] += dp[mask];
             }
-
-            //Make array as new array
-            for(int i=0;i<MAX;i++)
-                arr[i] = temp[i];
         }
 
-        //Find max among all and print the result
-        long long mx = 0;
-        for(int i=0;i<MAX;i++)
-            mx = max(mx,arr[i]);
-        cout<<mx<<endl;
+        //Print the possible way of reaching end result
+        cout<<dp[MAX-1]<<endl;
     }
 }
