@@ -28,6 +28,7 @@ BUGLIFE (Graph coloring)
 PHONELST (Trie)
 MCOINS (Game theory)
 LABYR1 (Max diameter of tree)
+LCA (Lowest common ancestor)
 ---------------------
 **
 ---------------------
@@ -45,7 +46,9 @@ TWOSQR (Fermet theorem and bitwise sieve)
 FIBOSUM (Matrix exponentitation)
 DQUERY (MO Algorithm)
 SHPATH (Dijkstra)
+ASSIGN (Bitmasking)
 -----------------------
 ***
 -----------------------
 DISUBSTR (Suffix array)
+QTree (Heavy light decomposition)
