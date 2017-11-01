@@ -34,6 +34,8 @@ int main() {
                 break;
             }
         }
+
+        //Print answer
         if(flag)
             cout<<"POSSIBLE"<<endl;
         else
