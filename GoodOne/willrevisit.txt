@@ -30,6 +30,7 @@ MCOINS (Game theory)
 LABYR1 (Max diameter of tree)
 LCA (Lowest common ancestor)
 PT07X (DP)
+SCUBADIV (knapsack)
 ---------------------
 **
 ---------------------
@@ -48,6 +49,7 @@ FIBOSUM (Matrix exponentitation)
 DQUERY (MO Algorithm)
 SHPATH (Dijkstra)
 ASSIGN (Bitmasking)
+PON (Miller rabin randomized primality test)
 -----------------------
 ***
 -----------------------
