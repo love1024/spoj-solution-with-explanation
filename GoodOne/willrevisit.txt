@@ -31,6 +31,9 @@ LABYR1 (Max diameter of tree)
 LCA (Lowest common ancestor)
 PT07X (DP)
 SCUBADIV (knapsack)
+CPCRC1C - (Digit DP)
+LITE (Lazy propagation)
+BLINNET (MST)
 ---------------------
 **
 ---------------------
